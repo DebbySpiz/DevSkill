@@ -1,45 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      
-        </head>
-        <body> 
+        <head>
+              <style>
             
-          
+                .img {
+                        float: left;
+                        width: 150px;
+                        }
+                
+                .clearfix::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                .padding {
+                  padding-top: 0px;
+            padding-right: 208px;
+            padding-bottom: 80px;
+            padding-left: 205px;
+                    }
+            .list {
+                padding-top: 0px;
+                padding-right: 208px;
+                padding-bottom: 80px;
+                padding-left: 180px;
+                width: 370px;
+                text-align: justify;
+            }
+            table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+                </style>
+            </head>
+        <body>
+            <h1>Curriculum Vitae </h1>
             
-             <table cellpadding="5" cellspacing="1" style="width: 80%">
-                <tbody>
-                    <div>
-                        <img src="debora.jpg" style=float:left; margin: 20px> 
-                        <h1>Curriculum Vitae </h1>
-                  </div>
-                    <tr>
-                        <td><b>Informazioni Personali</b></td>
-                        <td><b>Dati Personali</b></td>
-                       <tr>
-                           <td></td>
-                           <td>  <ul> 
-                            <li>Spizzirri Debora </li>
-                              <li>debora.spizzirri@gmail.com</li>
-                              <li>Scrivi qualcosa su di te</li>
-                 
-
-                    </ul></td>
-
-
-                    
-                   
-                </tbody>
-            </table>
-        </div> 
-
-
-
-
-
-
-
-
-
+            <div class="clearfix">
+                
+                     <img class="img" src="debora.jpg">
+                     
+                         <div class="padding">
+                            <h1>  Informazioni Personali </h1>
+                                <h2> Dati Personali </h2>
+                         </div>
+                          <div class="list" style="padding-bottom: 10px;">     
+                               
+                               <tr>
+                                   <td></td>
+                                   <td>  <ul> 
+                                    <li>Spizzirri Debora </li>
+                                      <li>debora.spizzirri@gmail.com</li>
+                                      <li>Ho chiesto a mia sorella cosa potevo dire su di me, mi ha definito una pazza,
+                                        acida, isterica, che effettivamente corrisponde effettivamente a verità, ma ho anche i miei lati 
+                                        positivi che sono i seguenti:
+                                        <li> ...</li>
+                                        <li> ...</li>
+                                        <li> ...</li>
+                                        <li> no niente mi arrendo non ne ho.</li>
+                                      </li>
+                                     </ul></td>
+                                
+                             </div> 
+                             <div style="overflow-x: auto;">
+                                <table>
+                                  <tr>
+                                    <th>Autonomia</th>
+                                    <th>Autostima</th>
+                                    <th>Adattamento</th>
+                                    <th>Pianificazione</th>
+                                    </tr>
+                                    <tr>
+                                    
+                                        <td>-10</td>
+                                        <td>10</td>
+                                        <td>7</td>
+                                        <td>7</td>
+                                        </tr>
+                                    <tr>
+                                    <th>Precisione</th>
+                                    <th>Intraprendenza</th>
+                                    <th>Problem solving</th>
+                                    <th>Lavoro di gruppo</th>
+                                    </tr>  
+                                   <tr>
+                                    <td>8</td> 
+                                    <td>10</td>
+                                    <td>7</td>
+                                    <td>10</td>
+                                   
+                                  </tr>
+                                 
+                                </table>
+                              </div>
+                                
+                            
+                     
+        </div>
+        
         </body>
-</html>
+        </html>
+       
+          
