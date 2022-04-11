@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html >
         <head>
               <style>
-            
+                body {
+                  background-color: burlywood;
+                  margin-left: 20px; 
+                }
+                
                 .img {
                         float: left;
                         width: 150px;
@@ -12,24 +16,21 @@
                     content: "";
                     clear: both;
                     display: table;
-                }
+                    
+                    
+                  }
                 .padding {
-                  padding-top: 0px;
-            padding-right: 208px;
-            padding-bottom: 80px;
-            padding-left: 205px;
-            color: brown
+                 padding-bottom: 80px;
+                 padding-left: 205px;
+                  color: brown
                     }
             .list {       
-                padding-top: 0px;
-                padding-right: 208px;
-                padding-bottom: 80px;
+                
                 padding-left: 180px;
                 width: 370px;
                 text-align: justify;
-                font-family: 'Times New Roman', Times, serif;
-                ;
-            }
+                font-family: cursive;
+}
             table {
   border-collapse: collapse;
   width: 100%;
@@ -40,37 +41,43 @@ th, td {
   padding: 8px;
 }
 tr:nth-child(even) {background-color: #aa9b9b;color: brown;}
+                  .text {
+                    text-align: justify; 
+                    width: 500px; 
+                    font-family: cursive; 
+                    font-size: small;
+                    color: brown;
+                  }
 
                 </style>
             </head>
      <body>
-         <h1 style="font-family: 'Times New Roman', Times, serif;text-align: center;">Curriculum Vitae </h1>
-            
-            <div class="clearfix">
-                
+             <div class="clearfix"  >
+                <h1 style="font-family: 'Times New Roman', Times, serif;text-align: center;">Curriculum Vitae </h1>
                      <img class="img" src="debora.jpg">
                      
                          <div class="padding">
                             <h1>  Informazioni Personali </h1>
                                 <h2> Dati Personali </h2>
                          </div>
-                          <div class="list" style="padding-bottom: 10px;">     
+                          <div class="list" >     
                                
                                <tr>
-                                   <td></td>
-                                   <td>  <ul> 
-                                     <li>Spizzirri Debora </li>
-                                      <li>debora.spizzirri@gmail.com</li>
-                                      <li>Ho chiesto a mia sorella cosa potevo dire su di me, mi ha definito una pazza,
+                                   
+                                   <td> 
+                                     <ul> 
+                                      <li>Spizzirri Debora </li>
+                                       <li>debora.spizzirri@gmail.com</li>
+                                        <li>Ho chiesto a mia sorella cosa potevo dire su di me, mi ha definito una pazza,
                                         acida, isterica, che effettivamente corrisponde effettivamente a verità, ma ho anche i miei lati 
                                         positivi che sono i seguenti:
                                         <li> ...</li>
                                         <li> ...</li>
                                         <li> ...</li>
-                                        <li> no niente mi arrendo non ne ho.</li>
+                                       <li> no niente mi arrendo non ne ho.</li>
                                       </li>
                                      </ul>
-                                    </td>
+                                   </td>
                            </div> 
                              <div style="width: 500px;">
                                 <table>
@@ -105,7 +112,7 @@ tr:nth-child(even) {background-color: #aa9b9b;color: brown;}
                               </div>
                               
                                 <h1>  Esperienze Professionali </h1>
-                                   <div style="text-align: justify; width: 500px;">
+                                   <div class="text">
                                        <h2>Progetto Accesso Diretto per Banca Mediolanum</h2>
                                   <h3> Java, Javascript, Ejs, Xhtml, Css, Bootstrap, JSON, Rest
                                       Ambiente di sviluppo: Eclipse su macchina virtuale Centos
@@ -125,23 +132,26 @@ tr:nth-child(even) {background-color: #aa9b9b;color: brown;}
                                       molto responsive con l'ausilio di Bootstrap per rendere tutto fruibile anche da dispositivi mobile.</h2>
                                     </p>     
                                   </div> 
-                                    <h1 style="width: 500px;"> Realizzazione sito web di presentazione per azienda locale</h1>
-                                      <h2> Tecnologie: Javascript, Jquery, Xhtml, CSS, Sql </h2>
-                                       <h2>Ruolo:</h2>
-                                       <ul>
+                                   <h1 style="width: 500px;"> Realizzazione sito web di presentazione per azienda locale</h1>
+                                    <div class="text">
+                                     <h2> Tecnologie: Javascript, Jquery, Xhtml, CSS, Sql </h2>
+                                      <h2 >Ruolo:</h2>
+                                      <ul >
                                           <li> Specifiche dei requisiti</li>     
                                           <li> Analisi e design</li>    
                                           <li> Implementazione</li>   
                                           <li> Test </li>    
                                       </ul>
-                     <h1> Progetti Futuri</h1>
-                     <ul>
-                       <li> Diventare Full Stack Developer per dimostrare che se voglio, posso. </li>
-                      <li> Licenziarmi finalmente dall'attività di Zia(Ovviamente scherzo) </li>
-                      <li> Riuscire a incontrare l'amore della mia vita XD</li>
-                      <li> Riuscire ad evitare di sbagliare a scrivere li</li> 
-                    </ul>
-                    
+                                    </div>
+                               <h1> Progetti Futuri</h1>
+                        <div class="text">
+                          <ul >
+                            <li> Diventare Full Stack Developer per dimostrare che se voglio, posso. </li>
+                             <li> Licenziarmi finalmente dall'attività di Zia(Ovviamente scherzo) </li>
+                              <li> Riuscire a incontrare l'amore della mia vita XD</li>
+                            <li> Riuscire ad evitare di sbagliare a scrivere li</li> 
+                          </ul>
+                        </div>
             </div>
         
         </body>
