@@ -1,8 +1,0 @@
-let base:number = prompt ("Inserisci la base")
-let altezza:number = prompt ("Inserisci l'altezza")
-
-
-console.log ( base * altezza / 2)
-console.log ( +base + +altezza + +altezza)
-
-
