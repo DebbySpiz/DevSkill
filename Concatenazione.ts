@@ -1,6 +1,15 @@
-let parola1:string = prompt ("Inserisci prima parola")
-let parola2:string = prompt ("Inserisci seconda parola")
 
 
-console.log ( parola1 + parola2)
-console.log ( parola2 + parola1)
+function concatenazione (parola1:string, parola2:string): string{
+   
+    let concatenazione:string = parola1+""+ parola2;
+      console.log(concatenazione);
+  return concatenazione;
+}
+
+
+let parola1 = prompt ("Inserisci prima parola")
+let parola2= prompt ("Inserisci seconda parola")
+
+concatenazione(parola1,parola2);
+
