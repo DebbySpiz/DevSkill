@@ -20,14 +20,14 @@ if ( numero % 2 ==0 ){
 
 let numero:number = prompt ("Inserisci numero");
 
-switch ( numero % 2 ) {
-    case 0:  { 
-        console.log ("Il numero è Pari");
-         break;
-     } 
-    
-         default : {
-         console.log ("Il numero è Dispari")
-     }
-
+function pariDispari(numero:number) : number {
+    if ( numero % 2 ==0 ){
+    console.log ("il numero è pari");
+    return numero;
+} else {
+    console.log("Il numero è dispari");
+    return numero;
 }
+}
+pariDispari(numero);
+

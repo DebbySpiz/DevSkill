@@ -1,32 +1,29 @@
-/*
-Si scriva un programma che presi in input 3 valori, verifichi e stampi a schermo quali tra questi e` il piu` grande
-a schermo :
-E.S
-Input: 3 54 12
-Output: Il valore piu` grande e` : 54
-*/
-let numero1:number = prompt ("Inserisci numero uno");
-let numero2:number = prompt ("Inserisci numero due");
-let numero3:number = prompt ("Inserisci numero tre");
+let x:number = prompt ("inserisci il primo numero");
+let y:number = prompt ("inserisci il secondo numero");
 
-
-function maggiore (numero1:number, numero2:number, numero3:number): number {
-if ( numero1 > numero2 && numero2 > numero3)
-{
-    console.log ("Il maggiore è " + numero1);
-    return numero1;
+function addizione (x:number, y:number): number {
+   let somma:number = +x +  +y;
+   console.log("Il risultato dell'Addizione è: " + somma) ;
+   return somma;
 }
-else if (numero2 > numero1 && numero2 > numero3){
-    console.log ("Il maggiore è " + numero2);
-  return numero2;
-}
-else {
-    console.log ("Il maggiore è " + numero3);
-return numero3;
-}
+function sottrazione (x:number, y:number): number {
+  let somma:number = x - y;
+  console.log("Il risultato della Sottrazione è:" +somma) ;
+   return somma;
 
 }
-maggiore(numero1, numero2, numero3);
+function moltiplicazione (x:number, y:number): number {
+  let somma:number = x * y;
+   console.log("Il risultato della Moltiplicazione è:" +somma) ;
+   return somma;
+    }
+    function divisione (x:number, y:number): number {
+        let somma:number = x / y;
+   console.log("Il risultato della Divisione è:" +somma); 
+   return somma;
+   }
 
-
-
+addizione(x,y);
+sottrazione(x,y);
+moltiplicazione(x,y);
+divisione(x,y);

@@ -6,30 +6,17 @@ Output: "Il numero e` positivo "
 Input: -10
 Output: "Il numero e` negativo "
 
-
-let numero:number = prompt ("Inserisci numero");
-
-if ( numero > 0 ){
-    console.log ("Il numero è POSITIVO");
-} else  {
-      numero < 0;
-    console.log ("Il numero è NEGATVO");
-}
-
-let numero:number = prompt ("Inserisci numero");
-
-switch ( numero ) {
-    case  (numero > 0 && numero):  { 
-        console.log ("Il numero è POSITIVO");
-         break;
-     } 
-     case (numero < 0 && numero):   { 
-         console.log ("Il numero è NEGATIVO"); 
-    break; }
-     default : {
-         console.log ("Maggiori di 0 sono POSITIVI")
-     }
-
-}
-
 */
+
+let numero:number = prompt ("Inserisci numero");
+
+
+function positivo (numero:number): number {
+    if (numero > 0) {
+        console.log("Il numero è Positivo");
+        return numero;
+    } else {
+        console.log("Il numero è Negativo");
+    }
+    }
+    positivo(numero);
