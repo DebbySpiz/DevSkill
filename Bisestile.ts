@@ -28,3 +28,21 @@ if(anno%400==0){
 
 
 
+
+ 
+
+function isBisestile(anno:number):boolean {
+
+    if (anno % 400 == 0 || anno%4 ==0 && anno % 100 != 0) {
+      
+        return true;
+    } else {
+        return false; 
+         }
+       }
+    
+    let anno:number = prompt ("Scrivi l'anno");
+    console.log ((isBisestile(anno)));
+   
+
+
