@@ -5,17 +5,27 @@
 // Ouput : MARCO ANASTASIO
  
 
-function upperCase(nome:string,cognome:string):string {
+function upperCase(identificativo:string):string {
+  return identificativo.toUpperCase();
+            
+        }
+
+function lowerCase(identificativo:string):string {     
+       return identificativo.toLowerCase();
     
+ } 
+   let identificativo:string = prompt("Scrivi Nome e cognome");
  
-    let identificativo = nome+ " " +cognome;
-     console.log (identificativo.toUpperCase());
-     
-       return identificativo;
-       
-    }
-    
-    let nome:string = prompt ("Scrivi il tuo nome");
-     let cognome:string = prompt ("Scrivi il tuo cognome");
- 
- upperCase(nome,cognome);
+   
+  if( upperCase(identificativo) == identificativo) {
+      console.log (lowerCase(identificativo));
+  }    else if( lowerCase(identificativo) == identificativo) {
+      console.log (upperCase(identificativo));
+  } else { 
+      console.log ("Non è possibile eseguire il comando");
+  }
+
+
+
+
+   
