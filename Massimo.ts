@@ -4,22 +4,29 @@ a schermo :
 E.S
 Input: 3 54 12
 Output: Il valore piu` grande e` : 54
-
+*/
 let numero1:number = prompt ("Inserisci numero uno");
 let numero2:number = prompt ("Inserisci numero due");
 let numero3:number = prompt ("Inserisci numero tre");
 
-let numero;
 
+function maggiore (numero1:number, numero2:number, numero3:number): number {
 if ( numero1 > numero2 && numero2 > numero3)
 {
-    numero = numero1;
+    console.log ("Il maggiore è " + numero1);
+    return numero1;
 }
 else if (numero2 > numero1 && numero2 > numero3){
-    numero= numero2;
+    console.log ("Il maggiore è " + numero2);
+  return numero2;
 }
 else {
-    numero = numero3;
+    console.log ("Il maggiore è " + numero3);
+return numero3;
 }
-console.log ("Il maggiore è " + numero);
-*/
+
+}
+maggiore(numero1, numero2, numero3);
+
+
+

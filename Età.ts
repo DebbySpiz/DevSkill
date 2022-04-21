@@ -18,21 +18,19 @@ if ( anno < anno_nascita) {
     console.log ("Stampa la mia età " + eta )
 */
 
-let anno: number = prompt ("Inserisci l'anno");
+let anno_corrente: number = prompt ("Inserisci l'anno");
 let anno_nascita: number = prompt ("Inserisci il tuo anno");
 
-let eta = anno - anno_nascita ;
-switch (eta) {
-    case ((eta = anno_nascita - anno)): { console.log( " Stampa la mia età " + eta); 
-    break
-    }
-    case (( eta = anno - anno_nascita) ): { console.log( " Stampa la mia età " + eta); 
-    break
-    }
 
-default : { console.log (" Non riesco a calcolare l'età"); break}
-    }
 
+function calcoloAnni (anno_nascita:number, anno_corrente:number):number{
+    let  calcoloAnni = anno_corrente - anno_nascita && anno_nascita -anno_corrente;
+    
+   console.log (calcoloAnni);
+    return calcoloAnni;
+}
+
+calcoloAnni(anno_corrente,anno_nascita);
 
 
 
