@@ -32,34 +32,49 @@
 let feet:number = prompt("Inserisci la tua altezza");
 let libre:number = prompt("Inserisci il tuo peso");
 
-let altezza = feet/3.2808; // FORMULA PER CONVERTIRE FEET IN METER
-let peso = libre/2.2046; // FORMULA PER CONVERTIRE POUND TO KILOGRAM
-let BMI:number = (peso/(altezza*altezza )); // CALCOLO BODY MASS INDEX
 
- 
-if (BMI<16.5) {
-    console.log ("Sei Sottopeso Severo");
+
+ function BodyMassIndex(feet:number, libre:number){
+     feet = feet/3.2808;
+     libre =  libre/2.2046;
+      
+      let BMI:number= libre/(feet*feet);
+
+    if (BMI<16.5) {
+    return ("Sei Sottopeso Severo");
     }
     else if (BMI >= 16.5 && BMI < 18.4) {
-        console.log ("Sei Sottopeso");
+        return "Sei Sottopeso";
     }
     else if (BMI >= 18.5 && BMI < 24.9) {
-        console.log ("Sei Normale");
+        return "Sei Normale";
     }
      else if (BMI >= 25 && BMI < 30) {
-        console.log ("Sei Sovrappeso");
+        return "Sei Sovrappeso";
     }
      else if (BMI >= 30.1 && BMI < 34.9) {
-        console.log ("Non va bene, Obesità secondo grado");
+        return "Non va bene, Obesità primo grado";
     }
-     else if (BMI >= 40) {
-        console.log ("Sei un gskianto");
+    else if (BMI >= 35 && BMI < 40) {
+        return "Non va bene, Obesità secondo grado";
     }
+     else {
+        return "Sei un gskianto";
+    }
+ }
+console.log(BodyMassIndex(feet,libre));
+
+ 
+
+ 
+ /*
+
     
     let si:string = "si";
     let no:string = "no";
     let risposta:string = prompt ("Vuoi effettuare una misurazione più precisa?");
 
+function scelta(risposta:string):void {
     if (risposta == "si" ) {
         
         let sesso:string = prompt("Inserisci il sesso");
@@ -77,6 +92,7 @@ if (BMI<16.5) {
         else  {console.log ("Ti sei spaventato ah?");  }
          }
 
-
+    }
+}
  
-
+*/

@@ -47,7 +47,7 @@ function scelta(risposta:number):void{
 }
 
 scelta(misure);
-
+ 
 function celsiusToFahrenhait (gradi:number): number {           //Converte da Celsius a Fahrenhait
      let cToF: number = gradi*1.8 + 32;
      return cToF;
