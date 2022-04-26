@@ -62,37 +62,35 @@ let libre:number = prompt("Inserisci il tuo peso");
         return "Sei un gskianto";
     }
  }
-console.log(BodyMassIndex(feet,libre));
-
- 
-
- 
- /*
 
     
-    let si:string = "si";
-    let no:string = "no";
     let risposta:string = prompt ("Vuoi effettuare una misurazione più precisa?");
 
-function scelta(risposta:string):void {
-    if (risposta == "si" ) {
+function scelta(risposta:string) {
+    if (risposta === "no") {
+         console.log( "Grazie della disponilibilà"); 
+    }
+     else if (risposta === "si" ) {
         
         let sesso:string = prompt("Inserisci il sesso");
         let polso:number = prompt("Inserisci circonferenza polso")
      
-        if (sesso == "f"){
-            if (polso <=15) { console.log ("La tua costituzione è Esile"); } 
-             else if (polso >= 15 && polso <= 16) { console.log ("La tua costituzione è nella norma");}
-         else if (polso >16) { console.log("Sei un pò Robustella u.u");}
+        if (sesso == "f" || sesso == "F" ){
+            if (polso <=15) {
+                 console.log ("La tua costituzione è Esile");
+                  } else if (polso >= 15 && polso <= 16) {
+                       console.log ("La tua costituzione è nella norma");}
+         else if (polso >16) { 
+             console.log("Sei un pò Robustella u.u");
+             }
         }
-         if (sesso == "m"){ 
+         else if (sesso == "m"){ 
              if (polso <=17) {console.log ("La tua costituzione è Esile");
         } else if (polso >= 17 && polso <= 18) { console.log ("La tua costituzione è nella norma");}
-         else if (polso >=18) { console.log("Sei un pò Robustella u.u");   }
-        else  {console.log ("Ti sei spaventato ah?");  }
-         }
-
+         else if (polso >=18) { console.log("Sei un pò Robustella u.u"); 
+          }     
+    }  
     }
 }
- 
-*/
+ console.log(BodyMassIndex(feet,libre));
+scelta(risposta);
