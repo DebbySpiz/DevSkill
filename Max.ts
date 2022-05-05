@@ -16,7 +16,7 @@ numeri = + (prompt("inserisci numeri"));
     }
     console.log(max);
   
-   } 
+   
    
       
      

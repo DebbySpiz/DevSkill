@@ -17,7 +17,7 @@ function count() : number {
       array_elements.push(input);
       input = count();
     }
-    var current = 0;
+    let current = 0;
     var cnt = 0;
     for (let i = 0; i < array_elements.length; i++) {
  let occ = 1;
