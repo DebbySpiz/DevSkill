@@ -11,27 +11,44 @@ Output: C = [ 1, 8, 4 ,10 ,6];
 */
 
 
-let a: number [] = [];
-let b: number [] = [];
-let c: number []= [];
 
-let count:number = 5;
+
+function array1() :number{
+  return +prompt("Inserisci i primi 5 numeri");
+}
+function array2() :number{
+  return +prompt("Inserisci i restanti 5 numeri");
+}
+
+
+let a:number [] = [];
+let b:number [] = [];
+
+let c = [];
+let count = +prompt("Inserisci il valore dell'Array");
+if (count < 5 || count > 10){
+  console.log("Non disponibile");
+} else {
 for ( let i =0; i < count; i++) {
- a.push(prompt("Inserisci numero"));
+a.push(array1());
 }
 for ( let i=0; i < count; i++) {
- b.push(prompt("Inserisci numero"));
+b.push(array2());
 }
+
 for (let i = 0; i < count; i++) {
-  if (i%2 ===0) {
-    c.push(a[i]);
-  }
-  else {
-    c.push(b[i]);
-  }
+if (i%2 == 0) {
+  c.push(a[i]);
+}
+else {
+  c.push(b[i]);
+}
+}
+console.log(c);
 }
 
-console.log(c);
 
+
+ 
 
 
