@@ -37,5 +37,12 @@ function massimo(i: number, j: number): number {                      //Funzione
 }
 let a: number = input();
 let b: number = input();
+if ( 0 < a && a > 10000 || 0 < b && b > 10000 ){                  // Condizione che controlla che il numero non sia negativo e non sia maggiore di 10000
+  console.log("Non disponibile");
+} else {
 console.log(a + " " + b + " " + (massimo(a, b)));
+}
+
+  
+
 
