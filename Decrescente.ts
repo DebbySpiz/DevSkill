@@ -17,4 +17,3 @@ function array1() :number{
         a[i] = b;
      }
   console.log(a)
-        
